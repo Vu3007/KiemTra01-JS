@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <h2>API Test</h2>
+        <div id="buttons">
+            <button id="postsBtn" class="active" onclick="fetchData('posts')">Posts</button>
+            <button id="albumsBtn" onclick="fetchData('albums')">Albums</button>
+            <button id="photosBtn" onclick="fetchData('photos')">Photos</button>
+        </div>
+        <ul id="dataList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
