@@ -1,14 +1,9 @@
-// //bai1
-console.log("Kết quả trả về là 1 mảng các chuỗi có độ dài lớn nhất:");
+ //bai1
+console.log("Bài 1 :Kết quả trả về là 1 mảng các chuỗi có độ dài lớn nhất:");
 function getStringHasMaxLength(strings) {
     if (strings.length === 0) return [];
-
-    // Tìm độ dài lớn nhất của chuỗi trong mảng
     const maxLength = Math.max(...strings.map(str => str.length));
-
-    // Lọc ra các chuỗi có độ dài bằng độ dài lớn nhất
     const longestStrings = strings.filter(str => str.length === maxLength);
-
     return longestStrings;
 }
 
@@ -33,18 +28,20 @@ users = [
     }
 ]
 //1
-   console.log("Trả về mảng các user có age > 25 và isStatus = true:");
+console.log("Bài 2:");
+   console.log("1,Trả về mảng các user có age > 25 và isStatus = true:");
    function getName(){
     for(let i=0;i<users.length;i++){
         const p=users[i]
         if(p.age>=25&&p.isStatus==true){
-            console.log(p.name);
+            return p.name
         }
       }
    }
    console.log(getName());
+   
    //2
-   console.log(" Trả về mảng các user có age tăng dần");
+   console.log(" 2,Trả về mảng các user có age tăng dần:");
    function sort(a,b){
     return a.age-b.age;
    }
@@ -52,7 +49,7 @@ users = [
 
 
    //Bai3
-   console.log("Trả về Object hiển thị xem mỗi phần tử trong mảng xuất hiện bao nhiêu lần:");
+   console.log("Bài 3,Trả về Object hiển thị xem mỗi phần tử trong mảng xuất hiện bao nhiêu lần:");
 
    function getCountElement(arr) {
     let countObj = {};
